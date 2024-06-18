@@ -13,9 +13,9 @@ services:
     build:
       context: ./backend
     ports:
-      - "5000:5000"
+      - "3001:3001"
     environment:
-      MONGO_URI: mongodb://mongo:27017/mydatabase
+      MONGO_URI: mongodb://localhost:27017/
     depends_on:
       - mongo
 
