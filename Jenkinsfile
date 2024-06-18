@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
-        GIT_REPO = 'your-git-repo-url'
-        APP_NAME = 'my-mern-app'
+        DOCKERHUB_CREDENTIALS = credentials('devops-project')
+        GIT_REPO = 'https://github.com/HirunaD/DevOps-Project.git'
+        APP_NAME = 'health-lab'
     }
 
     stages {
