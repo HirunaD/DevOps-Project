@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the app for production with minification
-RUN npm run build
+RUN node --openssl-legacy-provider ./node_modules/react-scripts/scripts/build.js
 
 # Install serve to serve the build
 RUN npm install -g serve
